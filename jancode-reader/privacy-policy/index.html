@@ -42,8 +42,10 @@
                         <li>スキャン履歴データ（デバイス内のローカル保存のみ）</li>
                         <li>アプリの使用状況データ（Firebase Analytics）</li>
                         <li>クラッシュレポート（Firebase Crashlytics）</li>
-                        <li>サブスクリプション情報（RevenueCat）</li>
+                        <li>サブスクリプション情報（RevenueCat、Google Play Billing）</li>
                         <li>広告表示のための情報（Google AdMob）</li>
+                        <li>デバイス情報（OS バージョン、機種名、アプリバージョン等）</li>
+                        <li>アプリの権限情報（カメラ、ストレージ等の使用許可状態）</li>
                     </ul>
                 </section>
 
@@ -71,6 +73,7 @@
                     <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4 mb-4 text-sm md:text-base">
                         <li>Google Firebase（Analytics、Crashlytics）</li>
                         <li>RevenueCat（サブスクリプション管理）</li>
+                        <li>Google Play Billing（Android版サブスクリプション管理）</li>
                         <li>Google AdMob（広告配信）</li>
                     </ul>
                     <p class="text-gray-700 leading-relaxed text-sm md:text-base">
@@ -84,7 +87,7 @@
                     <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4 mb-4 text-sm md:text-base">
                         <li>スキャン履歴：お使いのデバイス内にローカル保存されます</li>
                         <li>アプリ使用データ：Firebaseサーバーに保存されます</li>
-                        <li>サブスクリプション情報：RevenueCatサーバーに保存されます</li>
+                        <li>サブスクリプション情報：RevenueCat及びGoogle Playサーバーに保存されます</li>
                     </ul>
                     <p class="text-gray-700 leading-relaxed text-sm md:text-base">
                         ローカル保存されたデータは、アプリを削除することで完全に削除されます。
@@ -93,10 +96,27 @@
 
                 <!-- Section 6 -->
                 <section class="mb-8">
-                    <h2 class="text-lg md:text-xl font-bold text-blue-600 mb-4">6. カメラの使用</h2>
-                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-                        本アプリはバーコードスキャンのためにカメラを使用します。撮影された画像は一時的にバーコード認識のために処理されますが、画像自体は保存されません。
-                    </p>
+                    <h2 class="text-lg md:text-xl font-bold text-blue-600 mb-4">6. アプリの権限について</h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">カメラ権限</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                本アプリはバーコードスキャンのためにカメラを使用します。撮影された画像は一時的にバーコード認識のために処理されますが、画像自体は保存されません。
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">ストレージ権限（Android版のみ）</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                スキャン履歴のエクスポート機能において、ファイルの保存のためにストレージへのアクセス権限を要求する場合があります。
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">ネットワーク権限</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                商品情報の取得、アプリの使用状況分析、広告配信のためにインターネット接続を使用します。
+                            </p>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Section 7 -->
@@ -111,7 +131,7 @@
                 <section class="mb-8">
                     <h2 class="text-lg md:text-xl font-bold text-blue-600 mb-4">8. お問い合わせ</h2>
                     <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-                        本プライバシーポリシーに関するご質問やご不明な点がございましたら、App Storeのアプリページよりお問い合わせください。
+                        本プライバシーポリシーに関するご質問やご不明な点がございましたら、各アプリストア（App Store、Google Play）のアプリページよりお問い合わせください。
                     </p>
                 </section>
 
